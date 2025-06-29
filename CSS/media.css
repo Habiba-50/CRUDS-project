@@ -1,0 +1,110 @@
+
+/* small mobile devices */
+@media (min-width: 640px) {
+    .sm-100 {
+      width: 100%;
+    }
+    .sm-50 {
+      width: 50%;
+    }
+    .sm-33 {
+      width: 33.33%;
+    }
+    .sm-25 {
+      width: 25%;
+    }
+    .sm-16 {
+      width: 16%;
+    }
+    .container{
+      width:97%;
+      margin:auto;
+      }
+  }
+  /* medium devices */
+  @media (min-width: 768px) {
+    .md-100 {
+      width: 100%;
+    }
+    .md-50 {
+      width: 50%;
+    }
+    .md-33 {
+      width: 33.33%;
+    }
+    .md-25 {
+      width: 25%;
+    }
+    .md-16 {
+      width: 16%;
+    }
+    .container{
+    width:90%;
+    margin:auto;
+    }
+    .logo{
+    float:left;
+    }
+    .nav-list{
+    float:right;
+    }
+    .nav-list ul li{
+    float:left;
+    padding:0px 10px;
+    }
+  }
+  /* large devices */
+  @media (min-width: 1024px) {
+    .lg-100 {
+      width: 100%;
+    }
+    .lg-50 {
+      width: 50%;
+    }
+    .lg-33 {
+      width: 33.33%;
+    }
+    .lg-25 {
+      width: 25%;
+    }
+    .lg-16 {
+      width: 16%;
+    }
+  }
+  /* extra large devices */
+  @media (min-width: 1280px) {
+    .xl-100 {
+      width: 100%;
+    }
+    .xl-50 {
+      width: 50%;
+    }
+    .xl-33 {
+      width: 33.33%;
+    }
+    .xl-25 {
+      width: 25%;
+    }
+    .xl-16 {
+      width: 16.66%;
+    }
+  }
+  /* extra extra large devices */
+  @media (min-width: 1536px) {
+    .xxl-100 {
+      width: 100%;
+    }
+    .xxl-50 {
+      width: 50%;
+    }
+    .xxl-33 {
+      width: 33.33%;
+    }
+    .xxl-25 {
+      width: 25%;
+    }
+    .xxl-16 {
+      width: 16%;
+    }
+  }
+  

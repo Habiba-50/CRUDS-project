@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+
+    <div class="crud container ">
+
+        <div class="w-100 px-4">
+            <!-- Header -->
+            <div class="head text-center ">
+                <h2>CRUD system</h2>
+                <p>PRODUCT MANAGEMENT SYSTEM</p>
+            </div>
+
+            <!-- Inputs -->
+            <div class="inputs row pt-3 ">
+                <input class="col-md-12 p-2" id="title" type="text" placeholder="title" />
+
+                <div class="price col-md-12 d-flex g-2 mt-3">
+                    <input onkeyup="getTotal()" class="priceM col-md-2 p-2" id="price" type="number"
+                        placeholder="price" />
+                    <input onkeyup="getTotal()" class="priceM iM col-md-2 p-2" id="taxes" type="number"
+                        placeholder="taxes" />
+                    <input onkeyup="getTotal()" class="priceM iM col-md-2 p-2" id="ads" type="number"
+                        placeholder="ads" />
+                    <input onkeyup="getTotal()" class="priceM iM col-md-2 p-2" id="discount" type="number"
+                        placeholder="discount" />
+                    <div class=" col-md-2 p-2 rounded-3" id="total"> <small></small> </div>
+                </div>
+
+                <input class="col-md-12 mt-3 p-2" id="count" type="number" placeholder="count" />
+                <input class="col-md-12 mt-3 p-2" id="category" type="text" placeholder="category" />
+                <button class="col-md-12 p-2 mt-3" id="submit">Create</button>
+            </div>
+        </div>
+
+
+        <!--Outputs -->
+        <div class="outputs">
+            <div class="searchBlock row">
+                <input id="search" onkeyup="searchData(this.value)" class="col-md-12 mx-4 mt-3 p-2" type="text"
+                    placeholder="search" />
+                <div class="btnSearch col-md-12 row justify-content-between  mt-3 mx-1 mb-3">
+                    <button onclick="getSearchMood(this.id)" id="searchTitle" class="col-md-5 p-2">Search By
+                        Title</button>
+                    <button onclick="getSearchMood(this.id)" id="searchCategory" class="col-md-5 p-2">Search By
+                        Category</button>
+                </div>
+            </div>
+            <div id="deleteAllBtn" class="w-100 mb-2"></div>
+
+            <div class="table-container">
+                ئ<table>
+                    <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>title</th>
+                            <th>price</th>
+                            <th>taxes</th>
+                            <th>ads</th>
+                            <th>discount</th>
+                            <th>total</th>
+                            <th>category</th>
+                            <th>update</th>
+                            <th>delete</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tBody" class="overflow-x-auto ">
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- class="w-100 text-center my-4 overflow-x-auto" -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
